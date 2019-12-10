@@ -44,7 +44,7 @@
 
 .product-carousel .btn-left, .product-carousel .btn-right{
     position: absolute;
-    top: calc(50% - 60px);
+    top: calc(50% - 40px);
     outline: 0;
     -webkit-transition: all .5s;
     transition: all .5s;

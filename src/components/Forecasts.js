@@ -62,8 +62,9 @@ class Forecasts extends Component {
                         >
                             {forecasts.map((forecast, i) => {
                             return (
-                              <Card className="mx-8 mb-16">
-                                <div className="relative bg-blue-300 h-40">
+                              <Card className="mx-2">
+                                <div style={{background: 'linear-gradient(0deg, rgba(0,212,255,1) 0%, rgba(121,116,212,1) 100%)'}}
+                                     className="relative h-40">
                                     <Typography variant="h4" className="m-auto ml-0 whitespace-no-wrap p-4">
                                         {forecast.high}<span>&#8451;</span>
                                     </Typography>
