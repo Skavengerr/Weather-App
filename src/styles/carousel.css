@@ -1,0 +1,73 @@
+/*----------------------------------------------------------------*/
+/*  Carousel
+/*----------------------------------------------------------------*/
+.product-carousel .product-thumbnail {
+    height: 110px;
+    overflow: hidden;
+}
+
+.product-carousel .react-multiple-carousel__arrow--left{
+    left: 0;
+}
+
+.product-carousel .react-multiple-carousel__arrow--right{
+    right: 0;
+}
+
+.product-carousel .btn-left::before, .product-carousel .btn-right::before {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: block;
+    font-family: revicons;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.product-carousel .btn-left::before{
+    content: "\E824";
+}
+
+.product-carousel .btn-right::before{
+    content: "\E825";
+}
+
+.product-carousel .btn-left{
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+}
+.product-carousel .btn-right{
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.product-carousel .btn-left, .product-carousel .btn-right{
+    position: absolute;
+    top: calc(50% - 60px);
+    outline: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    z-index: 1000;
+    border: 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    background: #BDBDBD;
+    height: 60px;
+    width: 30px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.product__btn-minus, .product__btn-plus{
+    background: #BDBDBD;
+    color: #fff;
+}
+.product__btn-minus:hover, .product__btn-plus:hover{
+    background-color: #275a42;
+}
+.product__qty-wrap{
+    border: 1px solid #BDBDBD;
+}
+.product__qty-wrap input {
+    text-align: center;
+}
