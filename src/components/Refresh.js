@@ -30,13 +30,13 @@ class Refresh extends Component {
                         Last updated at {new Date(lastUpdated).toLocaleTimeString()}.{" "}
                         </span>
                     )}
-                </div>
-                <div className="mx-4 m-auto">
+                </div> 
+                <div className="m-auto">
                     {!isFetching && (
                         <div>
-                        <Button className="m-8" variant="outlined" color="primary" onClick={this.handleRefreshClick}>
-                            Refresh
-                        </Button>
+                          <Button className="m-8" variant="outlined" color="primary" onClick={this.handleRefreshClick}>
+                              Refresh
+                          </Button>
                         </div>
                     )}
                 </div>
